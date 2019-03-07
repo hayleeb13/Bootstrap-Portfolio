@@ -5,12 +5,77 @@
   <meta charset="UTF-8">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  margin-top: 90px;
+  padding: 0px;
+  background-image: url(images/dark-paths.png);
+}
+
+.container{
+  width: 700px;
+  height: 500px;
+  margin: 0% auto;
+  line-height: 150%;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  background-color: white;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#Header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.names{
+  background-color: #4aaaa5;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  margin-left: 20%;
+  position: relative;
+  top: -40px;
+}
+
+.images{
+  width: 150px;
+  height: 100px;
+  margin-left: 20%;
+  max-width: 100%;
+}
+
+.footer {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: #666666;
+  border-color: #4aaaa5;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  text-align: center;
+}
+
+</style>
 </head>
 
 <body>
-
+<header>
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Haylee Bell</a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Haylee Bell</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,7 +86,37 @@
           <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+</header>
 
+<div class="container">
+  <div class="container-fluid">
+    <div class="row"><div class="col"><h2 id="Header">Portfolio<hr></h2></div></div>
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="images" src="images/hangman.jpg" alt="Hangman">
+        <p class="names">Hangman</p>
+        <img class="images" src="images/rpg.jpg" alt="RPG Game">    
+        <p class="names">RPG Game</p>
+        <img class="images" src="images/ticktactoe.jpg" alt="Tick Tac Toe">
+        <p class="names">Tick Tac Toe</p>
+      </div>
+      <div class="col-lg-4">
+        <img class="images" src="images/trivia.jpg" alt="Trivia">
+        <p class="names">Trivia</p>
+        <img class="images" src="images/rockpaperscissors.jpg" alt="Rock Paper Scissors">
+        <p class="names">Rock Paper Scissors</p3>
+      </div>          
+    </div>
+    </div>
+  </div>
+</div>
 </body>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="footer">Copyright &copy Haylee Bell</div>
+  </div>
+</div>
 </html>

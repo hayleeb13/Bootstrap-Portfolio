@@ -5,12 +5,80 @@
   <meta charset="UTF-8">
   <title>Contact</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
+  margin-top: 90px;
+  padding: 0px;
+  background-image: url(images/dark-paths.png);
+}
+
+.container{
+  width: 700px;
+  height: 460px;
+  margin: 0% auto;
+  line-height: 150%;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px;
+  background-color: white;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#Header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+form{
+  padding: 15px;
+}
+
+#message-box{
+  height: 150px;
+  width: 650px;
+}
+
+#button{
+  background: #4aaaa5;
+  height: 40px;
+  width: 70px;
+  color: white;
+}
+
+#button:hover{
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: #666666;
+  border-color: #4aaaa5;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  text-align: center;
+}
+
+</style>
 </head>
 
 <body>
-
+<header>
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Haylee Bell</a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Haylee Bell</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,7 +89,40 @@
           <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+</header>
 
+<div class="container">
+  <div class="container-fluid">
+    <div class="row content"><h2 id="Header">Contact</h2></div>
+    <div class="row content">
+      <div class="col-md-12">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+
+        <hr>
+
+        <form>
+          Name:<br>
+          <input type="text" name="name" value="John Smith">
+          <br>
+          Email:<br>
+          <input type="text" name="email" value="example@gmail.com">
+          <br>
+          Message<br>
+          <input id="message-box" type="text" name="message" value="">
+          <br><br>
+          <button id="button">Submit</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div>
 </body>
+
+<div class="row content">
+  <div class="col-md-12">
+    <div class="footer">Copyright &copy Haylee Bell</div>
+  </div>
+</div>
 </html>
